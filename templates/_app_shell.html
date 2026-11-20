@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{% endblock %} · Monitor de accesos</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='ui/app.css', v=version) }}">
+  <script type="application/json" id="app-data">{{ bootstrap|tojson }}</script>
+  <script type="module" src="{{ url_for('static', filename='ui/app.js', v=version) }}"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <noscript>Activa JavaScript para ver la aplicación local.</noscript>
+</body>
+</html>
